@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  color: #DC3545;
+  background-color: #121212;
+  font-weight: 400; 
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #DC3545; 
+}
+
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.tabs {
+  display: flex;
+  background-color: #1f1f1f;
+  border-radius: 14px;
+  padding: 0.5rem;
+}
+
+.tabs button {
+  padding: 0.5rem 1.5rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  text-align: center;
+  color: #DC3545;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tabs button:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.tabs button.active {
+  background-color: #282828;
+  color: #DC3545;
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.tabs button:hover {
+  background-color: #3a3a3a;
+  color: #DC3545;
+}
+
+.media-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.media-item {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 1.5rem;
+}
+
+.media-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s;
+}
+
+.media-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.media-headline {
+  text-align: center;
+  font-size: 1.5rem; 
+  font-weight: 600;
+  margin: 1rem 0;
+  color: #DC3545; 
+}
+
+.media-location {
+  font-size: 0.875rem;
+  color: #DC3545;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.media-video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.audio-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin: 1rem 0; 
+}
+
+.album-art {
+  width: 120px; 
+  height: 120px;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.audio-info {
+  text-align: center; 
+}
+
+.audio-controls {
+  width: 100%;
+}
+
+.song-title {
+  font-weight: 600;
+  margin-top: 0.5rem;
+  color: #DC3545;
+}
+
+.song-artist {
+  color: #DC3545; 
+  margin-top: 0.2rem;
+}
