@@ -7,10 +7,8 @@ const port = 5000;
 
 app.use(cors());
 
-// Serve static files from the 'media' directory
 app.use("/media", express.static(path.join(__dirname, "media")));
 
-// API endpoint to get list of media files
 app.get("/api/media", (req, res) => {
   const mediaDir = path.join(__dirname, "media");
   fs.readdir(mediaDir, (err, files) => {
